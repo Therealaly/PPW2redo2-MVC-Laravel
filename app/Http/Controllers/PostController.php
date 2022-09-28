@@ -44,7 +44,7 @@ class PostController extends Controller
         $post->title = $request->input('title');
         $post->description = $request->input('description');
         $post->save();
-        return redirect('posts');
+        return redirect('posts')->with('post-success', 'Post added successfuly!');
     }
 
     /**
@@ -91,7 +91,7 @@ class PostController extends Controller
         $post->title = $request->input('title');
         $post->description = $request->input('description');
         $post->save();
-        return redirect('posts');
+        return redirect('posts')->with('post-update', 'Post updated');
 
     }
 
@@ -105,6 +105,6 @@ class PostController extends Controller
     {
         $post = Post::find($id);
         $post->delete(); // menghapus data dari database
-        return redirect('posts');
+        return redirect('posts')->with('post-delete', 'Post removed :(');
     }
 }
