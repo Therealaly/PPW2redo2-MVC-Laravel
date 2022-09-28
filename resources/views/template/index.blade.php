@@ -4,7 +4,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Blog Posts</h1>
-            <a type="" class="btn btn light btn-primary mt-1 mb-3" href="/posts/create">New Post</a>
+            <a type="" class="btn btn light btn-primary mt-1 mb-3" href="{{ route('posts.create') }}">Create a New Post</a>
             @if(count($posts)>0)
                 @foreach ($posts as $post)
                     <div class="well">

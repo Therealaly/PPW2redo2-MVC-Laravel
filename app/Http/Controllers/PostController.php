@@ -44,6 +44,7 @@ class PostController extends Controller
         $post->title = $request->input('title');
         $post->description = $request->input('description');
         $post->save();
+        return redirect('posts');
     }
 
     /**
@@ -70,7 +71,11 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = array(
+            'id' => "posts",
+            'posts' => Post::find($id)
+        );
+        return view('template.edit', ["title" => "Edit Post"])->with($data);
     }
 
     /**
@@ -82,7 +87,12 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $post = Post::find($id);
+        $post->title = $request->input('title');
+        $post->description = $request->input('description');
+        $post->save();
+        return redirect('posts');
+
     }
 
     /**
@@ -93,6 +103,8 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+        $post->delete(); // menghapus data dari database
+        return redirect('posts');
     }
 }
