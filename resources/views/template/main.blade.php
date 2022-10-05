@@ -20,9 +20,9 @@
             @include('template.header')
             @include('template.sidebar')
            
-           
+            <div style="margin-left: 250px">
             @yield('jumbotron')
-         
+            </div>
 
             @include('template.footer')
 
