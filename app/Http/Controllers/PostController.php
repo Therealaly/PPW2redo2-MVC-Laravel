@@ -16,8 +16,8 @@ class PostController extends Controller
     {
          //return Post::All();
         $data = array(
-            'id' => "posts",
-            'posts' => Post::all()
+        'id' => "posts",
+        'posts' =>  Post::orderBy('created_at', 'desc')->paginate(5),
         );
         return view('template.index', ["title" => "Blog",])->with($data);
     }
