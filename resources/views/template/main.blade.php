@@ -15,14 +15,11 @@
     <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
 </head>
 <body class="hold-transition sidebar-mini">
-    <div class="wrapper">
+    <div>
     
-        @include('template.header')
-        @include('template.sidebar')
+        @include('partials.navbar')
         
-        <div style="margin-left: 250px">
         @yield('jumbotron')
-        </div>
 
         @include('template.footer')
 

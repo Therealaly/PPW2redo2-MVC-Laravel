@@ -17,7 +17,9 @@
                 </div>
             @endif
             <h1 class="display-4">Blog Posts</h1>
+            @if(Auth::user())
             <a type="" class="btn btn light btn-primary mt-1 mb-3" href="{{ route('posts.create') }}">Create a New Post</a>
+            @endif
             @if(count($posts)>0)
                 @foreach ($posts as $post)
                     <div class="well">

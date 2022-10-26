@@ -107,4 +107,9 @@ class PostController extends Controller
         $post->delete(); // menghapus data dari database
         return redirect('posts')->with('post-delete', 'Post removed :(');
     }
+
+    public function __construct()
+    {
+    $this->middleware('auth', ["except" => ["index", "show"]]);
+    }
 }
