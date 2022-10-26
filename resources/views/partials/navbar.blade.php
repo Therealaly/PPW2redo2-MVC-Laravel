@@ -18,9 +18,11 @@
                 <li class="nav-item">
                     <a class="nav-link {{ ($title === "Education") ? 'active' : '' }}" href="/education">Education</a>
                 </li>
+                @if(Auth::user())
                 <li class="nav-item">
                     <a class="nav-link {{ ($title === "Projects") ? 'active' : '' }}" href="/projects">Projects</a>
                 </li>
+                @endif
                 <li class="nav-item">
                     <a class="nav-link {{ ($title === "Blog") ? 'active' : '' }}" href="/posts">Blog</a>
                 </li>
