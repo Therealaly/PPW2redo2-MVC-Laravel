@@ -58,6 +58,7 @@ Auth::routes();
 
 Route::get('/projects', [App\Http\Controllers\PageController::class, 'index'])->name('projects');
 
+/*
 Auth::routes();
 
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');

@@ -1,9 +1,10 @@
+
 @extends('template.main')
 
 @section('jumbotron')
 
-    <div class="mt-4">
+    @auth
         <h1>Halaman Edukasyhuun</h1>
-    </div>
-    
+    @endauth
+
 @endsection
