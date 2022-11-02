@@ -21,7 +21,9 @@
         
         @yield('jumbotron')
 
+        <div>
         @include('template.footer')
+        </div>
 
     </div>
 

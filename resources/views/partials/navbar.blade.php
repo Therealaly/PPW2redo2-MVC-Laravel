@@ -24,6 +24,9 @@
                 </li>
                 @endif
                 <li class="nav-item">
+                    <a class="nav-link {{ ($title === "Tulis Email") ? 'active' : '' }}" href="/send-email">Tulis Email</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link {{ ($title === "Blog") ? 'active' : '' }}" href="/posts">Blog</a>
                 </li>
                 </ul>
