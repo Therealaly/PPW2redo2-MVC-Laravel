@@ -4,7 +4,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1>Edit Blog Post</h1>
-            <form action="{{ route('posts.update', $posts->id) }}" method="POST">
+            <form action="{{ route('posts.update', $posts->id) }}" method="POST" enctype="multipart/form-data">
                 @method('PUT')
                 {{ csrf_field() }}
                 <div class="form-group">

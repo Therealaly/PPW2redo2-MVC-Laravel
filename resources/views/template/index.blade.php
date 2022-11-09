@@ -24,7 +24,10 @@
                 @foreach ($posts as $post)
                     <div class="well">
                         <h3><a href="/posts/{{ $post->id }}">{{ $post->title }}</a></h3>
-                        <small>Tanggal: {{ $post->created_at }}</small> 
+                        <small>Tanggal: {{ $post->created_at }}</small> <br>
+                        @if($post->picture)
+                        <img src="{{asset('storage/posts_image/'.$post->picture)}}" style="width: 100%; height: 255px; object-fit: cover; border-radius: 20px">
+                        @endif
                     </div>
                 @endforeach
             @else

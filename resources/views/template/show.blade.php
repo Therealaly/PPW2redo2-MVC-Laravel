@@ -16,7 +16,7 @@
             </form>
             @endif
             <p>{{ $posts->description }}</p>
-            <img src="{{asset('storage/posts_image/'.$posts->picture)}}">
+            <img src="{{asset('storage/posts_image/'.$posts->picture)}}"  style="border-radius: 20px">
         </div>
     </div>
 
