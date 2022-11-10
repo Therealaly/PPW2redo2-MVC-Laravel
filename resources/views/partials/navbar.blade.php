@@ -29,6 +29,9 @@
                 <li class="nav-item">
                     <a class="nav-link {{ ($title === "Blog") ? 'active' : '' }}" href="/posts">Blog</a>
                 </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a class="nav-link" href="{{ url('/gallery') }}">Gallery</a>
+                </li>
                 </ul>
             </div>
         </div>

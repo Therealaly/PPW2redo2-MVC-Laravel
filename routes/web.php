@@ -52,6 +52,8 @@ Route::get('/projects', function () {
 
 Route::resource('posts',
 'App\Http\Controllers\PostController');
+
+Route::resource('gallery', 'App\Http\Controllers\GalleryController');
 /*
 Route::get('/send-email',function(){
     $data = [

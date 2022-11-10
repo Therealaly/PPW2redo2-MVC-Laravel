@@ -21,6 +21,9 @@ style="margin-left: 250px">
         <li class="nav-item d-none d-sm-inline-block">
             <a class="nav-link {{ ($title === "Blog") ? 'active' : '' }}" href="/posts">Blog</a>
         </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a class="nav-link" href="{{ url('/gallery') }}">Gallery</a>
+        </li>
     </ul>
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
