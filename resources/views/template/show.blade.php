@@ -16,7 +16,9 @@
             </form>
             @endif
             <p>{{ $posts->description }}</p>
+            @if($posts->picture != 'noimage.png')
             <img src="{{asset('storage/posts_image/'.$posts->picture)}}"  style="border-radius: 20px">
+            @endif
         </div>
     </div>
 
