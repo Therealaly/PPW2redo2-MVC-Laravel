@@ -39,7 +39,6 @@ class GreetController extends Controller
     *           type="string"
     *       )
     *   ),
-    *
     *   @OA\Parameter(
     *   name="lastname",
     *   description="nama belakang",
@@ -49,7 +48,6 @@ class GreetController extends Controller
     *       type="string"
     *       )
     *   ),
-    *
     *   @OA\Response(
     *   response="default",
     *   description="successful operation"
