@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/greet',[App\Http\Controllers\GreetController::class,'greet'])->name('greet');
+Route::get('/gallery',[App\Http\Controllers\GalleryController::class,'index'])->name('gallery');
