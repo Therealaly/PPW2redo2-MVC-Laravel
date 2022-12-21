@@ -24,7 +24,7 @@ Auth::routes([
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
 
 Route::get('/home', function () {
@@ -90,9 +90,9 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('{page}', ['as' => 'page.index', 'uses' => 'App\Http\Controllers\PageController@index']);
 });
 
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 */
+

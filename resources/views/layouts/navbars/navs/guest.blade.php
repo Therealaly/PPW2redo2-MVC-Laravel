@@ -12,8 +12,8 @@
     <div class="collapse navbar-collapse justify-content-end" id="navigation">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="{{ route('login') }}" class="nav-link">
-            <i class="now-ui-icons design_app"></i> {{ __("Dashboard") }}
+          <a href="/home" class="nav-link">
+            <i class="now-ui-icons design_app"></i> {{ __("Home") }}
           </a>
         </li>
         <li class="nav-item @if ($activePage == 'register') active @endif">

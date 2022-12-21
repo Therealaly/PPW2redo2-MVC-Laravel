@@ -7,8 +7,9 @@
 @section('content')
   <div class="content">
     <div class="container">
-      <div class="row">
-        <div class="col-md-5 ml-auto">
+      <div class="justify-center">
+        <!--
+        <div class="">
           <div class="info-area info-horizontal mt-5">
             <div class="icon icon-primary">
               <i class="now-ui-icons media-2_sound-wave"></i>
@@ -43,10 +44,12 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mr-auto">
+        -->
+        <div class="col-md-4 ">
           <div class="card card-signup text-center">
             <div class="card-header ">
               <h4 class="card-title">{{ __('Register') }}</h4>
+              <!--
               <div class="social">
                 <button class="btn btn-icon btn-round btn-twitter">
                   <i class="fab fa-twitter"></i>
@@ -59,6 +62,7 @@
                 </button>
                 <h5 class="card-description">  {{ __('or be classical') }}</h5>
               </div>
+              -->
             </div>
             <div class="card-body ">
               <form method="POST" action="{{ route('register') }}">

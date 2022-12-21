@@ -3,23 +3,14 @@
     <nav>
       <ul>
         <li>
-          <a href="https://www.creative-tim.com" target="_blank">
-            {{__(" Creative Tim")}}
+          <a href="https://www.instagram.com/aadleyps" target="_blank">
+            {{__(" Instagran")}}
           </a>
         </li>
         <li>
-          <a href="http://presentation.creative-tim.com" target="_blank">
-            {{__(" About Us")}}
+          <a href="https://www.linkedin.com/in/anthonio-adley-885978223/" target="_blank">
+            {{__(" LinkedIn")}}
           </a>
-        </li>
-        <li>
-          <a href="http://blog.creative-tim.com" target="_blank">
-            {{__(" Blog")}}
-          </a>
-        </li>
-        <li>
-          <a href="https://www.updivision.com" target="_blank">
-            {{__(" Updivision")}}</a>
         </li>
       </ul>
     </nav>
@@ -27,10 +18,8 @@
       &copy;
       <script>
         document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-      </script>, {{__(" Designed by")}}
-      <a href="https://www.invisionapp.com" target="_blank">{{__(" Invision")}}</a>{{__(" . Coded by")}}
-      <a href="https://www.creative-tim.com" target="_blank">{{__(" Creative Tim ")}}</a>&
-      <a href="https://www.updivision.com" target="_blank">{{__(" Updivision")}}</a>
+      </script>, {{__(" Designed and coded by")}}
+      <a href="https://www.instagram.com/aadleyps" target="_blank">{{__(" Adley")}}</a>
     </div>
   </div>
 </footer>
