@@ -42,7 +42,7 @@
                                 @foreach($galleries as $gallery)
                                 <div class="col-sm-2">
                                     <div>
-                                        <a class="example-image-link" href="{{ asset('storage/posts_image/'.$gallery->picture) }}"
+                                        <a class="example-image-link" href="{{ asset('storage/app/public/posts_image/'.$gallery->picture) }}"
                                             data-lightbox="example-2" data-title="{{ $gallery->description }}">
                                              @if($gallery->picture !='noimage.png')
                                             <img class="esample-image img-fluid mb-2" src="{{ asset('storage/posts_image/'.$gallery->picture) }}" alt="image-1" />
